@@ -74,3 +74,8 @@ As a user, I would like to be able to see a chart showing the upcoming events in
 SCENARIO 1:
 
 Given that the user is in the show details view of the application; When the user clicks on show graph; Then a graph will appear showing the number of events in a city
+
+
+SERVERLESS
+
+AWS Lambda will be used to authenticate a user logging into this app. Using the serverless method of hosting this application, makes it easier to deploy and share, and gives the application the ability to be scalable and cost-efficient.
