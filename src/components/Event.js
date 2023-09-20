@@ -1,7 +1,7 @@
-import mockData from '../mock-data';
+
 import { useState } from "react";
 
-const Event = () => {
+const Event = ({ event }) => {
   const [details, setDetails] = useState(false);
    const handleDetails = () => {
     setDetails(!details);
@@ -10,17 +10,17 @@ const Event = () => {
   return (
       <li>
         <div className='eventDetails'>
-          <h1>{mockData[1].summary}</h1>
-          <h2>{mockData[1].location}</h2>
-          <h2>{mockData[1].created}</h2>
+          <h1>{event.summary}</h1>
+          <h2>{event.location}</h2>
+          <h2>{event.created}</h2>
+          {details ?
+        <p >{event.description}</p> :
+        null
+      }
           <button onClick={handleDetails}>
               {!details ? 'Show Details' : 'Hide Details'}
           </button>
         </div>
-        {details? (
-        <div className='eventKind'>
-          <h1>{mockData[0].kind}</h1>
-        </div>): null}
       </li>
   );
 }

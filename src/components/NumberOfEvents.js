@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const NumberOfEvents = () => {
+const NumberOfEvents = ({ }) => {
   const [query, setQuery] = useState("32");
   const handleInputChanged = (event) => {
     const value = event.target.value;
@@ -9,6 +9,7 @@ const NumberOfEvents = () => {
   
   return (
     <div id="number-of-events">
+    <label >Number of Events: </label>
       <input
         type="text"
         className="eventAmount"
