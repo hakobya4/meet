@@ -25,7 +25,11 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
+<<<<<<< Updated upstream
                 <span class='fraction'>20/20</span>
+=======
+                <span class='fraction'>17/17</span>
+>>>>>>> Stashed changes
             </div>
         
             
@@ -39,14 +43,22 @@
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
+<<<<<<< Updated upstream
                 <span class='fraction'>7/7</span>
+=======
+                <span class='fraction'>6/6</span>
+>>>>>>> Stashed changes
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
+<<<<<<< Updated upstream
                 <span class='fraction'>20/20</span>
+=======
+                <span class='fraction'>17/17</span>
+>>>>>>> Stashed changes
             </div>
         
             
@@ -109,6 +121,7 @@
 <a name='L44'></a><a href='#L44'>44</a>
 <a name='L45'></a><a href='#L45'>45</a>
 <a name='L46'></a><a href='#L46'>46</a>
+<<<<<<< Updated upstream
 <a name='L47'></a><a href='#L47'>47</a>
 <a name='L48'></a><a href='#L48'>48</a>
 <a name='L49'></a><a href='#L49'>49</a>
@@ -149,6 +162,27 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+=======
+<a name='L47'></a><a href='#L47'>47</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">24x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">26x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+>>>>>>> Stashed changes
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">26x</span>
@@ -158,14 +192,36 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< Updated upstream
+=======
+<span class="cline-any cline-yes">3x</span>
+>>>>>>> Stashed changes
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<<<<<<< Updated upstream
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState, useEffect } from "react";
 &nbsp;
 const CitySearch = ({ allLocations, setCurrentCity }) =&gt; {
+=======
+<span class="cline-any cline-yes">12x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import { useState } from "react";
+&nbsp;
+const CitySearch = ({ allLocations }) =&gt; {
+>>>>>>> Stashed changes
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [query, setQuery] = useState("");
   const [suggestions, setSuggestions] = useState([]);
@@ -181,12 +237,17 @@ const CitySearch = ({ allLocations, setCurrentCity }) =&gt; {
    const handleItemClicked = (event) =&gt; {
     const value = event.target.textContent;
     setQuery(value);
+<<<<<<< Updated upstream
     setShowSuggestions(false);
     setCurrentCity(value);
   };
    useEffect(() =&gt; {
     setSuggestions(allLocations);
   }, [`${allLocations}`]);
+=======
+    setShowSuggestions(false); // to hide the list
+  };
+>>>>>>> Stashed changes
   
   return (
     &lt;div id="city-search"&gt;
@@ -220,7 +281,11 @@ export default CitySearch;</pre></td></tr></table></pre>
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
+<<<<<<< Updated upstream
                 at 2023-09-20T00:04:13.219Z
+=======
+                at 2023-09-19T04:18:51.631Z
+>>>>>>> Stashed changes
             </div>
         <script src="../../prettify.js"></script>
         <script>
