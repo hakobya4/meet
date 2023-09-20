@@ -10,9 +10,9 @@ const Event = () => {
   return (
       <li>
         <div className='eventDetails'>
-          <h1>{mockData[0].summary}</h1>
-          <h2>{mockData[0].location}</h2>
-          <h2>{mockData[0].created}</h2>
+          <h1>{mockData[1].summary}</h1>
+          <h2>{mockData[1].location}</h2>
+          <h2>{mockData[1].created}</h2>
           <button onClick={handleDetails}>
               {!details ? 'Show Details' : 'Hide Details'}
           </button>

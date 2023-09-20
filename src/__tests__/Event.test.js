@@ -11,13 +11,13 @@ describe('<EventComponent /> component', () => {
 
 
   test('renders event summary', () => {
-    expect(EventComponent.queryByText(mockData[0].summary)).toBeInTheDocument();
+    expect(EventComponent.queryByText(mockData[1].summary)).toBeInTheDocument();
   });
   test('renders event location', () => {
-    expect(EventComponent.queryByText(mockData[0].location)).toBeInTheDocument();
+    expect(EventComponent.queryByText(mockData[1].location)).toBeInTheDocument();
   });
   test('renders event start time', () => {
-    expect(EventComponent.queryByText(mockData[0].created)).toBeInTheDocument();
+    expect(EventComponent.queryByText(mockData[1].created)).toBeInTheDocument();
   });
   test('has the button to show details', () => {
     const button = EventComponent.queryByText('Show Details');
