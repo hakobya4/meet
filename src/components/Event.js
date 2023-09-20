@@ -9,7 +9,7 @@ const Event = ({ event }) => {
 
   return (
       <li>
-        <div className='eventDetails'>
+        <div className='event'>
           <h1>{event.summary}</h1>
           <h2>{event.location}</h2>
           <h2>{event.created}</h2>
