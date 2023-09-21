@@ -14,10 +14,10 @@ const Event = ({ event }) => {
           <h2>{event.location}</h2>
           <h2>{event.created}</h2>
           {details ?
-        <p >{event.description}</p> :
+        <p className="details">{event.description}</p> :
         null
       }
-          <button onClick={handleDetails}>
+          <button className='details-btn' onClick={handleDetails}>
               {!details ? 'Show Details' : 'Hide Details'}
           </button>
         </div>

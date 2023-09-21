@@ -21,7 +21,7 @@ As a user, I would like to be able to show/hide event details so that I can see 
 
 SCENARIO 1
 
-Given the main page is open and the user has searched for a city; When the user has not interacted with the details of the event; Then the details of the event will be hidden from the user.
+Given the main page is open; When the user has not interacted with the details of the event; Then the details of the event will be hidden from the user.
 
 SCENARIO 2
 
