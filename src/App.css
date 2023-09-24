@@ -96,7 +96,14 @@ input[type="number"] {
 }
 .error-container {
   position: fixed;
-  top: 60px;
+  top: 55px;
+  left: 20px;
+  width: 250px;
+  z-index: 1000;
+}
+.warning-container {
+  position: fixed;
+  top: 95px;
   left: 20px;
   width: 250px;
   z-index: 1000;
