@@ -21,9 +21,9 @@ const App = () => {
   useEffect(() => {
     let warningText
     if (navigator.onLine) {
-     warningText = "You are offline, events may not update"
+     warningText = ""
    } else {
-    warningText = ""
+    warningText = "You are offline, events may not update"
    }
    setWarningAlert(warningText)
     fetchData();
