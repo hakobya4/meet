@@ -8,7 +8,8 @@ import { extractLocations, getEvents } from './api';
 import { InfoAlert } from './components/Alert';
 import { ErrorAlert } from './components/Alert';
 import { WarningAlert } from './components/Alert';
-
+import NavBar from './components/NavBar'
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 const App = () => {
@@ -42,6 +43,7 @@ const App = () => {
 
   return (
     <div className="App">
+      <NavBar/>
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert}/> : null}
       </div>

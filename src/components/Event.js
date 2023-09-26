@@ -1,4 +1,4 @@
-
+import moment from 'moment';
 import { useState } from "react";
 
 const Event = ({ event }) => {
@@ -12,7 +12,7 @@ const Event = ({ event }) => {
         <div className='event'>
           <h1>{event.summary}</h1>
           <h2>{event.location}</h2>
-          <h2>{event.created}</h2>
+          <h2>{moment(event.created).format('MMMM Do YYYY, h:mm:ss a')}</h2>
           {details ?
         <p className="details">{event.description}</p> :
         null
