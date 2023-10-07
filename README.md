@@ -111,8 +111,6 @@ SCENARIO 3
 Given the details of the event are shown; When the user interacts with the close details button; Then the details of the event will be hidden.
 
 
-
-
 FEATURE 3: Specify Number of Events.
 
 As a user, I would like to be able to specify the number of events I want to view in the app so that I can see more or fewer events in the events list at once.
