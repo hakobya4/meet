@@ -1,6 +1,6 @@
 # MeetApp
 
-MeetApp is an app where users can login and find new and upcoming events from Google Calendar. The users can login using their google account, filter the events by cities, specify how many events they would like to see, show and hide details of the event.
+[MeetApp](https://hakobya4.github.io/meet/) is an app where users can login and find new and upcoming events from Google Calendar. The users can login using their google account, filter the events by cities, specify how many events they would like to see, show and hide details of the event.
 
 ## Objective
 To build a serverless, progressive web application (PWA) with React using a test-driven development (TDD) technique. The application uses the Google Calendar API to fetch upcoming events.
