@@ -20,6 +20,7 @@ const App = () => {
   const [infoAlert, setInfoAlert] = useState("");
   const [errorAlert, setErrorAlert] = useState("");
   const [warningAlert, setWarningAlert] = useState("");
+  const[loading, setLoading] = useState(false)
 
   useEffect(() => {
     let warningText;
@@ -33,7 +34,8 @@ const App = () => {
   }, [currentCity, currentNOE]);
 
   const fetchData = async () => {
-    const allEvents = await getEvents();
+    setLoading(true)
+    const allEvents = await getEvents().then(setLoading(false));
     const filteredEvents =
       currentCity === "See all cities"
         ? allEvents
@@ -44,7 +46,9 @@ const App = () => {
 
   return (
     <div className="App">
-      <NavBar />
+      {loading ? <div className="lds-dual-ring"></div>: null}
+      <NavBar /> 
+      <button > Logout</button>
       <div className="alerts-container">
         {infoAlert.length ? <InfoAlert text={infoAlert} /> : null}
       </div>
